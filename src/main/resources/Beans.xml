@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="spot" class="com.thinkinginjava.part3.exercise5.DogImpl" scope="prototype">
+        <constructor-arg name="name" value="Spot"/>
+        <constructor-arg name="says" value="a good Spot"/>
+    </bean>
+
+    <bean id="scruffy" class="com.thinkinginjava.part3.exercise5.DogImpl" scope="prototype">
+        <constructor-arg name="name" value="Scruffy"/>
+        <constructor-arg name="says" value="a good Scruffy"/>
+    </bean>
+
+    <bean id="dogOut" class="com.thinkinginjava.part3.exercise5.DogOutManager"/>
+
+
+</beans>
